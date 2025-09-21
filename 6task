@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "RU");
+    int a;
+    cout << "Введите возраст: ";
+    cin >> a;
+    if (a < 18) {
+        cout << " Вы несовершеннолетний " << endl;
+    }
+    else if (18 <= a < 60) {
+        cout << " вы явно совершеннолетний " << endl;
+    }
+    else {
+        cout << " Вы старый" << endl;
+    }
+    return 0;
+}
