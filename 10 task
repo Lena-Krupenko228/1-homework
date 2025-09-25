@@ -1,0 +1,18 @@
+#include <iostream>  
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "RU");
+    cout << "ASCII таблица символов" << endl;
+    cout << "----------------------" << endl;
+    cout << "Код | Символ" << endl;
+    cout << "----+-------" << endl;
+
+    // Перебираем все символы от 32 до 126  
+    for (int code = 32; code <= 126; code++) {
+        // Выводим код и соответствующий символ  
+        cout << code << "   | " << static_cast<char>(code) << endl;
+    }
+
+    return 0;
+}
